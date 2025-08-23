@@ -1,0 +1,100 @@
+.sidenav {
+  height: 100vh;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb; /* Tailwind border */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* shadow-sm */
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 8px 0px; /* my-2 */
+}
+
+.divider {
+  margin: 18px 0; /* my-4.5 */
+  border: none;
+  border-bottom: 1px solid #d1d5db; /* border-b-1 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* shadow-sm */
+}
+
+.menuList {
+  margin-top: 12px; /* mt-3 */
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* gap-2 */
+  margin-bottom: 8px; /* mb-2 */
+  padding: 12px; /* p-3 */
+  border-radius: 8px; /* rounded-lg */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: black;
+}
+
+.menuItem:hover {
+  background-color: #16a34a; /* green-600 */
+  color: white;
+}
+
+.active {
+  background-color: #9333ea; /* purple-600 */
+  color: white;
+}
+
+.usageTrack {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media (max-width: 770px) {
+  .sidenav {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .menuList {
+    gap: 6px;
+  }
+
+  .sidenav {
+    padding: 15px;
+  }
+}
+@media (max-width: 530px) {
+  .menuList {
+    gap: 15px;
+  }
+  .logo{
+    display: none;
+    margin: 15px 0;
+  }
+  .sidenav {
+    padding: 5px;
+  }
+  .menuItem {
+    padding: 6px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider {
+    display: none;
+  }
+  .menuItem h2 {
+    display: none; 
+  }
+  .usageTrack{
+    display: none;
+  }
+}

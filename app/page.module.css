@@ -1,0 +1,91 @@
+@media (max-width: 700px) {
+  .parentDiv {
+    width: 250px;
+  }
+  .myDiv {
+    font-size: 12px;
+    padding: 8px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .parentDiv {
+    width: 200px;
+  }
+  .myDiv {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cls1 span {
+    font-size: 30px;
+  }
+  .cls1 p {
+    font-size: 17px;
+  }
+  .cls3 h2 {
+    font-size: 30px;
+  }
+  .cls3 p {
+    font-size: 17px;
+  }
+  .cls3 button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+  }
+  .cls2 button {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+  }
+  .cls3 {
+    padding: 30px;
+  }
+}
+@media (max-width: 470px) {
+  .myDiv {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+  .parentDiv {
+    width: 150px;
+  }
+  .clss {
+    width: 12px;
+    height: auto;
+  }
+
+  .cls1 span {
+    font-size: 22px;
+  }
+  .cls1 p {
+    font-size: 13px;
+  }
+  .cls3 h2 {
+    font-size: 22px;
+  }
+  .cls3 p {
+    font-size: 13px;
+  }
+  .cls3 button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 13px;
+  }
+  .cls2 button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 13px;
+  }
+  .cls3 {
+    padding: 25px;
+  }
+  .navbar nav{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,75 @@
+/* Card container */
+.card {
+  border: 1px solid #7f1d1d; /* border-red-900 */
+  padding: 20px; /* p-5 */
+  background-color: #ffffff; /* bg-white */
+  border-radius: 8px; /* rounded-md */
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* gap-1 */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover shadow */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.8); /* hover:shadow-purple-600 */
+}
+
+/* Title */
+.title {
+  font-weight: 700; /* font-bold */
+}
+
+/* Description text */
+.description {
+  color: #6b7280; /* text-gray-500 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;   /* line-clamp-3 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Small devices (≤640px) */
+@media (max-width: 680px) {
+  .card {
+    padding: 12px; /* sm:p-3 */
+    gap: 2px; /* reduce gap */
+  }
+  .title {
+    font-size: 14px; /* smaller title */
+  }
+  .description {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (641px - 768px) */
+@media (max-width: 770px) {
+  .card {
+    padding: 16px; /* md:p-4 */
+    gap: 3px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+
+/* Large devices (≥1024px) - optional if you want bigger look */
+@media (min-width: 1024px) {
+  .card {
+    padding: 24px; /* lg:p-6 */
+  }
+  .title {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}

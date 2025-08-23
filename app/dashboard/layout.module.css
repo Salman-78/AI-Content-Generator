@@ -1,0 +1,43 @@
+.container {
+  background-color: #f1f5f9; /* Tailwind bg-slate-100 */
+  height: 100%; /* Tailwind h-full */
+  display: flex;
+}
+
+.sidebar {
+  width: 16rem;
+  display: block;
+  position: fixed;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+  margin-left: 16rem;
+}
+
+@media (max-width: 770px) {  /*770 ya 770 se kam*/
+  .sidebar {
+    width: 12rem;
+  }
+  .main {
+    margin-left: 12rem; 
+  }
+}
+@media (max-width: 680px) {  
+  .sidebar {
+    width: 10rem;
+  }
+  .main {
+    margin-left: 10rem; 
+  }
+}
+@media (max-width: 530px) {  
+  .sidebar {
+    width: 4rem;
+  }
+  .main {
+    margin-left: 4rem; 
+  }
+
+}

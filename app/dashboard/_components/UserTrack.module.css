@@ -1,0 +1,87 @@
+/* Container spacing */
+.usageContainer {
+  margin: 20px; /* default m-5 */
+}
+
+/* Medium screen margin (md:m-4) */
+@media (max-width: 1024px) {
+  .usageContainer {
+    margin: 16px;
+  }
+}
+
+/* Small screen margin (sm:m-3) */
+@media (max-width: 640px) {
+  .usageContainer {
+    margin: 12px;
+  }
+}
+
+/* Card styles */
+.usageCard {
+  background-color: #7c3aed; /* bg-purple-600 */
+  color: white;
+  padding: 12px; /* p-3 */
+  border-radius: 10px;
+}
+
+/* Small screen padding (sm:p-2) */
+@media (max-width: 640px) {
+  .usageCard {
+    padding: 8px;
+  }
+}
+
+/* Title */
+.title {
+  font-weight: 500; /* font-medium */
+  font-size: 16px;
+}
+
+/* Progress Bar Background */
+.progressBarBackground {
+  height: 8px;
+  background-color: #c181f9;
+  width: 100%;
+  border-radius: 9999px;
+  margin-top: 12px;
+}
+
+/* Small screen spacing */
+@media (max-width: 640px) {
+  .progressBarBackground {
+    margin-top: 8px;
+  }
+}
+
+/* Progress Bar Fill */
+.progressBarFill {
+  height: 8px;
+  background-color: white;
+  border-radius: 9999px;
+}
+
+/* Usage text */
+.usageText {
+  margin: 8px 0;
+  font-size: 14px; /* text-sm */
+}
+
+/* Upgrade Button */
+.upgradeButton {
+  width: 100%;
+  margin: 12px 0;
+  background-color: #e5e7eb; /* bg-gray-200 */
+  color: #1e3a8a; /* text-blue-900 */
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.upgradeButton:hover {
+  background-color: #16a34a; /* hover:bg-green-600 */
+  color: white; /* hover:text-white */
+}

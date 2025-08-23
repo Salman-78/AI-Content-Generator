@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import UsageTrack from "./UsageTrack";
 import Link from "next/link";
+import styles from "./SideNav.module.css";
 
 const SideNav = () => {
   const MenuList = [
@@ -32,42 +33,36 @@ const SideNav = () => {
   const path = usePathname();
 
   return (
-    <div className="h-screen p-5 shadow-sm border bg-white relative">
-      <div className="flex justify-center">
+    <div className={styles.sidenav}>
+      <div className={styles.logoContainer}>
         <Image
           src="/logo.svg"
           alt="logo"
-          width={200} 
+          width={200}
           height={200}
-          className="my-2"
+          className={styles.logo}
         />
       </div>
-      <hr className="my-4.5 shadow-sm border-b-1" />
-      <div className="mt-3">
+
+      <hr className={styles.divider} />
+
+      <div className={styles.menuList}>
         {MenuList.map((menu, index) => (
           <Link key={index} href={menu.path}>
             <div
-              className={`flex gap-2 mb-2 p-3 hover:bg-green-600 hover:text-white rounded-lg cursor-pointer items-center ${
-                path === menu.path ? "bg-purple-600 text-white" : ""
+              className={`${styles.menuItem} ${
+                path === menu.path ? styles.active : ""
               }`}
             >
               <menu.icons />
               <h2>{menu.name}</h2>
             </div>
           </Link>
-          // <div key={index}
-          //   className={`flex gap-2 mb-2 p-3 hover:bg-green-600 hover:text-white rounded-lg cursor-pointer items-center ${
-          //     path == menu.path ? " bg-purple-600 text-white" : ""
-          //   }`}
-          // >
-          //   <menu.icons />
-          //   <h2>{menu.name}</h2>
-          // </div>
         ))}
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full">
-        <UsageTrack/>
+      <div className={styles.usageTrack}>
+        <UsageTrack />
       </div>
     </div>
   );
